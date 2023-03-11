@@ -2,6 +2,7 @@ package tetris
 
 import (
 	"fmt"
+	"math"
 	"os"
 	"strings"
 )
@@ -190,4 +191,15 @@ func Remove(grid [][]rune, tetromino [][]rune, row, col int) {
 			}
 		}
 	}
+}
+
+func Solve(content string) [][]rune {
+	tetrominoes := GetTetrominoes(content)
+	squareSize := int(math.Ceil(math.Sqrt(float64(4 * len(tetrominoes))))) // sqrt(# of tetrominoes * 4 characters per tetromino)
+	square := CreateSquare(squareSize)
+	for !PlaceTetrominoes(square, tetrominoes, 0, 0, 0) {
+		squareSize++
+		square = CreateSquare(squareSize)
+	}
+	return square
 }
