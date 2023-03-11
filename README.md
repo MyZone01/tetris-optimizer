@@ -4,8 +4,8 @@
 This is a program that receives only one argument, a path to a text file which will contain a list of tetrominoes and assemble them in order to create the smallest square possible.
 
 ##  Steps
-+   [ ] Read in the text file specified in the argument
-+   [ ] Parse the file contents into a list of tetrominoes
++   [x] Read in the text file specified in the argument
++   [x] Parse the file contents into a list of tetrominoes
 +   [ ] Calculate the total area of all the tetrominoes combined
 +   [ ] Calculate the minimum square size needed to fit all the tetrominoes by taking the square root of the total area and rounding up to the nearest integer
 +   [ ] Create a 2D grid with dimensions equal to the minimum square size calculated in step 4
