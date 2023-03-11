@@ -4,16 +4,16 @@
 This is a program that receives only one argument, a path to a text file which will contain a list of tetrominoes and assemble them in order to create the smallest square possible.
 
 ##  Steps
-+   [x] Read in the text file specified in the argument
-+   [x] Parse the file contents into a list of tetrominoes
-+   [ ] Calculate the total area of all the tetrominoes combined
-+   [ ] Calculate the minimum square size needed to fit all the tetrominoes by taking the square root of the total area and rounding up to the nearest integer
-+   [ ] Create a 2D grid with dimensions equal to the minimum square size calculated in step 4
-+   [ ] Attempt to place each tetromino on the grid in order, starting from the top-left corner and moving across and down
-+   [ ] If a tetromino cannot be placed in its current orientation, try rotating it and/or moving it to a different position until it can be placed
-+   [ ] If all orientations and positions have been tried and the tetromino still cannot be placed, backtrack and try a different placement for the previous tetromino
-+   [ ] If all possible placements for all tetrominoes have been tried and none of them can be placed, return an error message indicating that it is impossible to assemble the tetrominoes into a square of the required size
-+   [ ] If all tetrominoes have been successfully placed on the grid, return the completed grid as output
++   [x] Read in the text file specified in the argument.
++   [x] Parse the file contents into a list of tetrominoes.
++   [x] Calculate the total area of all the tetrominoes combined.
++   [x] Calculate the minimum square size needed to fit all the tetrominoes by taking the square root of the total area and rounding up to the nearest integer.
++   [x] Create a 2D grid with dimensions equal to the minimum square size calculated in step 4.
++   [x] Attempt to place each tetromino on the grid in order, starting from the top-left corner and moving across and down.
++   [ ] 🚩 If a tetromino cannot be placed in its current orientation, try rotating it and/or moving it to a different position until it can be placed. **(IT IS NOT ALLOW TO ROTATE TETROMINO)**
++   [ ] 🚩 If all orientations and positions have been tried and the tetromino still cannot be placed, backtrack and try a different placement for the previous tetromino. **(IT IS NOT ALLOW TO ROTATE TETROMINO)**
++   [ ] 🚩 If all possible placements for all tetrominoes have been tried and none of them can be placed, return an error message indicating that it is impossible to assemble the tetrominoes into a square of the required size. **(IT IS NOT AN ISSUE WHEN THERE ARE STILL EMPTY BLOCKS IN THE SQUARE)**
++   [x] If all tetrominoes have been successfully placed on the grid, return the completed grid as output.
 
 ##  Source 
 [Tetromino Wikipedia](https://en.wikipedia.org/wiki/Tetromino)
